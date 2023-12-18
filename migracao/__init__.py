@@ -1,0 +1,8 @@
+
+from .migracao import Migracao
+from .migracao_tabela_pessoa import MigracaoTabelaPessoa
+from .migracao_tabela_pessoa_fisica import MigracaoTabelaPessoaFisica
+from .migracao_tabela_suap_funcionario import MigracaoTabelaSuapFuncionario
+from .migracao_tabela_auth_user import MigracaoTabelaAuthUser
+from .migracao_tabela_servidor import MigracaoTabelaServidor
+from .migracao_tabela_comum_vinculo import MigracaoTabelaComumVinculo

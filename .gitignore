@@ -1,0 +1,6 @@
+data/*.csv
+.env.dev
+.env.local
+.env.prod
+.env.hmlog
+__pycache__/
