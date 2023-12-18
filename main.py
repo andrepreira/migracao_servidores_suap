@@ -41,7 +41,7 @@ if __name__ == '__main__':
     )
     logger.info(f"Executing migration of {pessoa.table}...")
     
-    # pessoa.execute()
+    pessoa.execute()
     
     ## TODO: pegar o id de auth_user e inserir nas tabelas:
     # pessoa_fisica -> user_id (auth_user.id)
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     )
     
     logger.info(f"Executing migration of {auth_user.table}...")
-    # auth_user.execute()
+    auth_user.execute()
     
     ## Tabela Pessoa Fisica
     pessoa_fisica = MigracaoTabelaPessoaFisica(
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     
     logger.info(f"Executing migration of {pessoa_fisica.table}...")
     
-    # pessoa_fisica.execute()
+    pessoa_fisica.execute()
     
     ## Tabela Suap Funcionario
     suap_funcionario = MigracaoTabelaSuapFuncionario(
@@ -73,13 +73,13 @@ if __name__ == '__main__':
     )
     logger.info(f"Executing migration of {suap_funcionario.table}...")
     
-    # suap_funcionario.execute()
+    suap_funcionario.execute()
     
     servidor = MigracaoTabelaServidor(
         conn=conn,
         url_conn=url_conn
     )
-    # servidor.execute()
+    servidor.execute()
     
     # TODO: review this tale
     # comum_vinculo = MigracaoTabelaComumVinculo(
